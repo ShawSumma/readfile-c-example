@@ -55,6 +55,7 @@ static readfile_t file_read(const char *filename) {
     readfile_t ret;
     ret.text = buf;
     ret.len = len;
+    ret.error = false;
     return ret;
 }
 
